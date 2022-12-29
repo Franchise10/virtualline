@@ -1,0 +1,103 @@
+<style>
+form {
+  width: 500px;
+  margin: 0 auto;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+form input[type="text"],
+form textarea {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+form input[type="submit"] {
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #0077c9;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+form select {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+span.required {
+  color: red;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #5A5A5A;
+  text-align: left;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #5A5A5A;
+  text-align: left;
+  line-height: 1.5;
+}
+
+li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #5A5A5A;
+  text-align: left;
+  line-height: 1.5;
+}
+</style>
+
+<html>
+  <head>
+    <title>Privacy Agreement</title>
+  </head>
+  <body>
+    <h1><u>Privacy Agreement</u></h1>
+    <p>Thank you for registering to receive our newsletter. We value your privacy and want to ensure that you understand how we will use your personal information.</p>
+    <p>By registering for our newsletter, you are agreeing to the following terms:</p>
+    <ul>
+      <li>Your email address will be used solely for the purpose of sending you our newsletter.</li>
+      <li>We will not share your email address with any third parties without your explicit consent.</li>
+      <li>You can unsubscribe from our newsletter at any time by following the unsubscribe link included in every newsletter email.</li>
+      <li>We will not use your email address for any other marketing purposes or send you any unsolicited emails.</li>
+      <li>We take your privacy seriously and will do everything in our power to protect it. If you have any questions or concerns about our privacy policy, please do not hesitate to contact us.</li>
+    </ul>
+    <p>Thank you for your interest in our newsletter.</p>
+  </body>
+
+<p>The current time is | <time id="current-time" datetime=""></time></p>
+</html>
+<script>
+  function updateTime() {
+    var currentTime = new Date();
+    document.getElementById("current-time").setAttribute("datetime", currentTime);
+    document.getElementById("current-time").innerHTML = currentTime;
+  }
+  setInterval(updateTime, 1000);
+</script>
